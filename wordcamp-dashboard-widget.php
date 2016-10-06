@@ -10,7 +10,7 @@
  * Plugin URI:        https://github.com/lubusonline/wordcamp-dashboard-widget
  * Description:       Wordpress plugin to show upcoming wordcamp on wp-admin dashboard.
  * Version:           0.1.1
- * Author:            LUBUS
+ * Author:            LUBUS, vachan
  * Author URI:        http://www.lubus.in
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -62,7 +62,7 @@ wp_enqueue_script( "js-script", plugin_dir_url( __FILE__ ) . 'assets/js/script.j
 function lubus_wdw_add_widget() {
 	wp_add_dashboard_widget(
                  'lubus_wdw_wordcamp_widget',  // Widget slug.
-                 'Upcoming Wordcamps',      // Title.
+                 'Upcoming WordCamps',      // Title.
                  'lubus_wdw_upcoming_wordcamp' // Display function.
         );	
 }
